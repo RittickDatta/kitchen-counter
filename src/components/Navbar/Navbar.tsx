@@ -19,13 +19,13 @@ const Navbar = (props: INavbar) => {
       <div className="navigation-menu">
         <ul>
           <li>
-            <NavLink to="/">Inventory</NavLink>
+            <NavLink to="/Inventory">Inventory</NavLink>
           </li>
           <li>
-            <NavLink to="/">Recipie Checklist</NavLink>
+            <NavLink to="/RecipieChecklist">Recipie Checklist</NavLink>
           </li>
           <li>
-            <NavLink to="/">Shopping List</NavLink>
+            <NavLink to="/ShoppingList">Shopping List</NavLink>
           </li>
         </ul>
       </div>
