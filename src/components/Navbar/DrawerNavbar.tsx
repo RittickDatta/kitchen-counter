@@ -4,10 +4,11 @@ import "./DrawerNavbar.css";
 
 interface IProps {
   showDrawer: boolean;
+  onHamburgerClick: () => void;
 }
 
 const DrawerNavbar = (props: IProps) => {
-  const { showDrawer } = props;
+  const { showDrawer, onHamburgerClick } = props;
 
   return (
     <nav
@@ -15,17 +16,23 @@ const DrawerNavbar = (props: IProps) => {
         showDrawer ? "drawer-navigation" : "drawer-navigation hide-drawer"
       }
     >
-      <div className="drawer-brand-name">Kitchen</div>
+      <div className="drawer-brand-name">My Kitchen</div>
       <div className="drawer-navigation-menu">
         <ul>
           <li>
-            <NavLink to="/Inventory">Inventory</NavLink>
+            <NavLink to="/Inventory" onClick={() => onHamburgerClick()}>
+              Inventory
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/RecipieChecklist">Recipie Checklist</NavLink>
+            <NavLink to="/RecipieChecklist" onClick={() => onHamburgerClick()}>
+              Recipie Checklist
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/ShoppingList">Shopping List</NavLink>
+            <NavLink to="/ShoppingList" onClick={() => onHamburgerClick()}>
+              Shopping List
+            </NavLink>
           </li>
         </ul>
       </div>

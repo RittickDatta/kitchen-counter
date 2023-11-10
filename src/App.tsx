@@ -12,7 +12,7 @@ export default function App() {
     <Router>
       <div className="App">
         <Navbar onHamburgerClick={handleDrawer} />
-        <DrawerNavbar showDrawer={showDrawer} />
+        <DrawerNavbar showDrawer={showDrawer} onHamburgerClick={handleDrawer} />
         <div className="container">
           <AppRoutes />
           <Outlet />

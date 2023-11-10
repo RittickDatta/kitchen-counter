@@ -10,7 +10,7 @@ const Navbar = (props: INavbar) => {
   const { onHamburgerClick } = props;
   return (
     <nav className="navigation">
-      <div className="brand-name">Kitchen</div>
+      <div className="brand-name">My Kitchen</div>
       <div className="hamburger" onClick={() => onHamburgerClick()}>
         <div className="hamburger-lines"></div>
         <div className="hamburger-lines"></div>

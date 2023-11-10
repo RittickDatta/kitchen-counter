@@ -1,8 +1,8 @@
 import React from "react";
-import "./Inventory.css"
+import "./Inventory.css";
 
 const Inventory = () => {
- return <>Inventory</>   
-}
+  return <div className="content">Inventory</div>;
+};
 
 export default Inventory;

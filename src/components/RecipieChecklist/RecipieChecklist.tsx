@@ -1,10 +1,8 @@
 import React from "react";
-import "./RecipieChecklist.css"
+import "./RecipieChecklist.css";
 
 const RecipieChecklist = () => {
-    return (
-        <>RecipieChecklist</>
-    )
-}
+  return <div className="content">Recipie Checklist</div>;
+};
 
 export default RecipieChecklist;
