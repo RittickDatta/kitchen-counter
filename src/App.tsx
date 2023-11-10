@@ -1,7 +1,7 @@
 import "./styles.css";
 import Navbar from "./components/Navbar/Navbar";
 import DrawerNavbar from "./components/Navbar/DrawerNavbar";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Outlet } from "react-router-dom";
 import { useState } from "react";
 
 export default function App() {
@@ -10,8 +10,12 @@ export default function App() {
   return (
     <Router>
       <div className="App">
+        <AppRoutes />
         <Navbar onHamburgerClick={handleDrawer} />
         <DrawerNavbar showDrawer={showDrawer} />
+        <div className="container">
+          <Outlet />
+        </div>
       </div>
     </Router>
   );
